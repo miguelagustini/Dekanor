@@ -1,0 +1,9 @@
+@font-face{
+    font-family: helvetica-bolt;
+    src: url('../fuente/HelveticaNowText-Bold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: helvetica-regular;
+    src: url('../fuente/HelveticaNowText-Light.ttf') format('truetype');
+}

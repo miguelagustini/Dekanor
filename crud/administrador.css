@@ -1,0 +1,99 @@
+
+@font-face{
+    font-family: helvetica-bold;
+    src: url('../fuente/HelveticaNowText-Bold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: helvetica-extrabold;
+    src: url('../fuente/HelveticaNowText-ExtraBold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: helvetica-light;
+    src: url('../fuente/HelveticaNowText-Light.ttf') format('truetype');
+}
+
+
+:root {
+    --main-color: #d3ad7f;
+    --black: #1f1e1f;
+    --bg: #010103;
+    --border: .1rem solid rgba(255,255,255,.3);
+}
+
+* {
+    font-family: 'helvetica-light';
+    margin: 0; padding: 0;
+    box-sizing: bordering-box;
+    outline: none; border: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+
+
+html {
+    font-size: 90%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+
+
+.navbar {
+    height: 12rem;
+}
+.navbar .navbar-brand {
+    padding: 3rem;
+    font-size: 3rem;
+    margin: 0 auto;
+    font-family: 'helvetica-bold';
+}
+
+.formulario {
+    margin: 1.5rem;
+    border: solid;
+    border-width: .1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 6rem;
+}
+
+.formulario .titulo {
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+
+.formulario .form-group {
+    padding-block: 1.3rem;
+}
+
+.formulario .btn {
+    margin-inline: 40rem;
+    padding-inline: 7rem;
+    
+}
+
+.table {
+    margin-top: 6rem;
+    max-width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20rem;
+    text-align: center;
+    font-size: helvetica-light;
+    border: solid;
+}
+.table .thead th{
+    font-size: helvetica-light;
+}
+.blanco {
+    height: 20rem;
+}
+
+.table .imagen_tabla {
+    width: 5rem;
+    height: auto;
+}
