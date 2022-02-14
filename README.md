@@ -1,0 +1,2 @@
+# Dekanor
+Pagina web dekanor
