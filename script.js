@@ -3,16 +3,12 @@ let navbar = document.querySelector('.navbar');
 
 document.querySelector('#menu-btn').onclick = () =>{
     navbar.classList.toggle('active');
-    searchForm.classList.remove ('active');
-    cartitem.classList.remove ('active');
 }
 
 
 
 window.onscroll = () =>{
     navbar.classList.remove ('active');
-    searchForm.classList.remove ('active');
-    cartitem.classList.remove ('active');
 }
 
 
@@ -21,37 +17,44 @@ window.onscroll = () =>{
 // contadores
 let nums = document.querySelectorAll(".num");
 let section = document.querySelector(".three");
-let started = false; // Function Started ? No
+const number100 = document.getElementById('num100');
+const number10 = document.getElementById('num10');
 
-window.onscroll = function () {
-  if (window.scrollY /2 >= section.offsetTop) {
-    if (!started) {
-      nums.forEach((num) => startCount(num));
-    }
-    started = true;
-  }
-};
+let cont10 = 0;
+let cont100 = 0;
 
-function startCount(el) {
-  let goal = el.dataset.goal;
-  let cont = 0;
+function showText () {
 
-  let count = setInterval(() => {
-    cont += 1;
-    if (goal==100) {
-        el.textContent = `+ ${cont} K` ;
-    }
+	let scrollTop = window.innerHeight;
+	let topNumber = section.getBoundingClientRect().top;
 
+	if(topNumber <= scrollTop / 1.3 ){
+  
+    if(cont10 == 0){
 
-    else{
-        el.textContent = `+ ${cont}`;
-    }
+      let count = setInterval(() => {
+          cont100 += 1;
+
+          number100.textContent = `+ ${cont100} K` ;
+        
+          if (cont100 >= 100) {
+              clearInterval(count);
+        }
+      }, 2000 / 100);
+
+       let count10 = setInterval(() => {
+         cont10 += 1;
+
+         number10.textContent = `+ ${cont10}` ;
     
-    if (cont == goal) {
-      clearInterval(count);
+         if (cont10 >= 10) {
+              clearInterval(count10);
+        }
+      }, 2000 / 10);
     }
-  }, 2000 / goal);
-
+	}
 }
+
+window.addEventListener('scroll', showText);
 
 

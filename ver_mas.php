@@ -51,11 +51,6 @@
 <div class="desplegable" id="desplegable">
         
     <div class="mes"><a href="">Enero 2022</a></div>
-    <div class="mes"><a href="">Diciembre 2021</a></div>
-    <div class="mes"><a href="">Noviembre 2021</a></div>
-    <div class="mes"><a href="">Octubre 2021</a></div>
-    <div class="mes"><a href="">Septiembre 2021</a></div>
-    <div class="mes"><a href="">Agosto 2021</a></div>
 
 </div>
 
