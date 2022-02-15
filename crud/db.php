@@ -1,9 +1,9 @@
 <?php
     $conexion= mysqli_connect (
-    'localhost',
-    'root',
-    '',
-    'dekanor'
+    'bvsmlzva5sut3jqine8h-mysql.services.clever-cloud.com',
+    'ughzspzmcwwi2p3h',
+    'xCtL4bRnmdmSdaQcTSZm',
+    'bvsmlzva5sut3jqine8h'
 )
 
 ?>
