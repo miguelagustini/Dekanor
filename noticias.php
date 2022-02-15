@@ -73,7 +73,7 @@
             <div class="contenido">
                 <h3><?php echo $row ['fecha'] ?><span> | <?php echo $row ['titulo'] ?></span></h3>
                 <p><?php echo $row ['texto'] ?></p>
-                <a href="ver_mas.html" class="btn-content">VER MAS</a>
+                <a href="ver_mas.php?id= <?php echo $row ['id']?>" class="btn-content">VER MAS</a>
 
             </div>
 

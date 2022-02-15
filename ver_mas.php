@@ -61,7 +61,28 @@
 
 
 
-<!-- blogs section starts  -->
+<!-- vermas section starts  -->
+
+<?php include ("crud/db.php");
+$titulo = '';
+$fecha= '';
+$title = '';
+$descripcion= '';
+$imagen_nombrenuevo= '';
+
+$id= $_GET ['id'];
+$query = "SELECT * FROM noticia WHERE id=$id";
+$result= mysqli_query($conexion, $query); 
+
+
+$row = mysqli_fetch_array ($result);
+        $titulo = $row ['titulo'];
+        $fecha = $row ['fecha'];
+        $descripcion = $row ['texto'];
+        $imagen_nombre = $row ['imagen_nombre'];
+
+?>
+
 
 <section class="vermas" id="vermas">
 
@@ -69,11 +90,11 @@
 
         <div class="box">
             <div class="image">
-                <img src="imagenes/Pagina Web Fotos-13.jpg" alt="">
+                <img src="crud/imagenes/<?php echo $row ['imagen_nombre'] ?>" alt="">
             </div>
             <div class="content">
-                <h3>22.03.2021 <span>|Resumen semanal con Juan Perez</span></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis eos dolores tempora architecto, quod maiores distinctio fugiat blanditiis, error et harum assumenda tenetur ad autem reiciendis nobis eius alias. Amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quasi doloremque officia voluptatem, deleniti est, facilis iste sed temporibus quod fuga porro ipsum saepe itaque laudantium amet excepturi sunt ab. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque laudantium, hic architecto explicabo quas maxime! Animi ducimus qui et, sed ea facere alias velit error vero tenetur accusantium explicabo nulla! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius molestiae sunt consequuntur nostrum, eaque similique. Eveniet dolorem mollitia illo, culpa odio perspiciatis aut laudantium, consequuntur, numquam perferendis dolor tenetur quia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ea quo corrupti accusantium error quibusdam tenetur ipsam sequi rem. Voluptatum quasi impedit deleniti earum quia numquam voluptatem at nam ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque harum quam reiciendis amet laborum tempore corporis quod sint odit temporibus voluptates, accusamus maxime laudantium, saepe nostrum doloribus dignissimos ducimus.</p>
+                <h3><?php echo $row ['fecha'] ?><span>|<?php echo $row ['titulo'] ?></span></h3>
+                <p><?php echo $row ['texto'] ?></p>
             </div>
         </div>
 
@@ -82,7 +103,7 @@
 
 </section>
 
-<!-- blogs section ends  -->
+<!-- vermas section ends  -->
 
 
  <!-- footer empieza -->
