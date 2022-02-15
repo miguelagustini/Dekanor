@@ -294,13 +294,231 @@ z-index: 1000;
 }
 
 .imagenes .imagen {
+    height: 53rem;
     text-align: center;
-    
+    background: url(../imagenes/imagenweb1.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 }
 
-.imagenes .imagen img{
-    height: 53rem;
+@keyframes slide {
+25% {
+    background: url(../imagenes/imagenweb2.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    }
+
+50% {
+    background: url(../imagenes/imagenweb3.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    }
+
+75% {
+    background: url(../imagenes/imagenweb4.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    }
+
+100% {
+     background: url(../imagenes/imagenweb5.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    }
+
 }
+.imagenes #imagen1 {
+    animation: slide1 10s infinite;
+}
+
+@keyframes slide1 {
+    25% {
+        background: url(../imagenes/imagenweb6.jpg);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        }
+    
+    50% {
+        background: url(../imagenes/imagenweb7.jpg);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        }
+    
+    75% {
+        background: url(../imagenes/imagenweb8.jpg);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        }
+    
+    100% {
+         background: url(../imagenes/imagenweb9.jpg);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        }
+    
+    }
+
+    .imagenes #imagen2 {
+        animation: slide2 15s infinite;
+    }
+
+    @keyframes slide2 {
+        25% {
+            background: url(../imagenes/imagenweb2.jpg);
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            }
+        
+        50% {
+            background: url(../imagenes/imagenweb3.jpg);
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            }
+        
+        75% {
+            background: url(../imagenes/imagenweb4.jpg);
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            }
+        
+        100% {
+             background: url(../imagenes/imagenweb5.jpg);
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            }
+        
+        }
+
+
+.imagenes #imagen3 {
+            animation: slide3 10s infinite;
+        }
+    
+    @keyframes slide3 {
+            25% {
+                background: url(../imagenes/imagenweb10.jpg);
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                }
+            
+            50% {
+                background: url(../imagenes/imagenweb11.jpg);
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                }
+            
+            75% {
+                background: url(../imagenes/imagenweb12.jpg);
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                }
+            
+            100% {
+                 background: url(../imagenes/imagenweb13.jpg);
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                }
+            
+            }
+
+.imagenes #imagen4 {
+     animation: slide4 15s infinite;
+ }
+        
+ @keyframes slide4 {
+        25% {
+                 background: url(../imagenes/imagenweb14.jpg);
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+             }
+                
+         50% {
+              background: url(../imagenes/imagenweb15.jpg);
+             background-size: auto 100%;
+            background-repeat: no-repeat;
+             }
+                
+         75% {
+              background: url(../imagenes/imagenweb16.jpg);
+             background-size: auto 100%;
+             background-repeat: no-repeat;
+         }
+                
+        100% {
+             background: url(../imagenes/imagenweb1.jpg);
+             background-size: auto 100%;
+            background-repeat: no-repeat;
+            }
+                
+    }
+
+
+    .imagenes #imagen5 {
+        animation: slide5 10s infinite;
+    }
+           
+    @keyframes slide5 {
+           25% {
+                    background: url(../imagenes/imagenweb3.jpg);
+                   background-size: auto 100%;
+                   background-repeat: no-repeat;
+                }
+                   
+            50% {
+                 background: url(../imagenes/imagenweb4.jpg);
+                background-size: auto 100%;
+               background-repeat: no-repeat;
+                }
+                   
+            75% {
+                 background: url(../imagenes/imagenweb5.jpg);
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+            }
+                   
+           100% {
+                background: url(../imagenes/imagenweb6.jpg);
+                background-size: auto 100%;
+               background-repeat: no-repeat;
+               }
+                   
+       }
+    
+
+ .imagenes #imagen6 {
+    animation: slide6 15s infinite;
+    }
+           
+@keyframes slide6 {
+        25% {
+               background: url(../imagenes/imagenweb7.jpg);
+             background-size: auto 100%;
+            background-repeat: no-repeat;
+        }
+                   
+        50% {
+            background: url(../imagenes/imagenweb8.jpg);
+             background-size: auto 100%;
+            background-repeat: no-repeat;
+                }
+                   
+        75% {
+             background: url(../imagenes/imagenweb9.jpg);
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+        }
+                   
+        100% {
+         background: url(../imagenes/imagenweb10.jpg);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+               }
+                   
+       }
+
+/*.imagenes .imagen img{
+    height: 53rem;
+}*/
 
 
 .footer{
@@ -508,6 +726,7 @@ font-size: 2rem;
    padding-bottom: 3rem;
    font-family: helvetica-extrabold;
    letter-spacing: -.2rem;
+   overflow: hidden;
 }
 
 .noticias .row-noticias .contenido p{
@@ -760,10 +979,11 @@ font-size: 2rem;
     }
     .imagenes .imagen  {
         width: 50%;
-    }
-    .imagenes .imagen img {
-        height: auto;
-        width: 100%;
+        height: 32rem;
+        display: flex;
+        background-position: center;
+        object-fit: fill;
+        background-size: auto;
     }
 
 
