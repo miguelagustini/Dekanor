@@ -675,12 +675,13 @@ z-index: 1000;
     align-items: center;
     justify-content: center;
     padding: .7rem 4%;
+    padding-inline: 3rem;
 
 }
 
 .desplegable .mes{
 font-size: 2rem;
-padding-inline:2rem;
+padding-inline: 2rem;
 }
 
 .desplegable #mes_actual {
