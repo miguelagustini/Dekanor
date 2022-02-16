@@ -19,8 +19,8 @@
   </div>
 
   <div class="form-group">
-    <label>Noticia</label> <br>
-    <textarea class="form-control" name="descripcion" rows="3" autofocus></textarea>
+    <label>Noticia  (Para dejar un renglón escribir &lt;br&gt;)</label> <br>
+    <textarea class="form-control" name="descripcion" rows="3" autofocus id="administrador-description"></textarea>
   </div>
 
   <div class="form-group">
