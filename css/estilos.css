@@ -658,6 +658,7 @@ z-index: 1000;
     margin-top: 9rem;
     margin-bottom: 3rem;
     font-family: helvetica-extrabold;
+    padding-inline: 3rem;
  }
 
  .desplegable {
