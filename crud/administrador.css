@@ -41,6 +41,14 @@ html {
 }
 
 
+.card {
+    width: 90rem;
+    margin-left: -30rem;
+}
+
+.card .form-group {
+    padding-block: 1.3rem;
+}
 
 .navbar {
     height: 12rem;

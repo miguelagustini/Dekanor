@@ -59,7 +59,7 @@
   <div class="row">
     <div class="col-md-4 mx-auto">
       <div class="card card-body">
-      <form action="edit.php?id=<?php echo $_GET['id']; ?>" method="POST" enctype="multipart/form-data">
+      <form action="edit.php?id=<?php echo $_GET['id']; ?>" method="POST" enctype="multipart/form-data" class="form_edit">
 
 
         <div class="form-group">

@@ -227,13 +227,13 @@ z-index: 1000;
   
 
 
-.father-semicirculo h3{
+.father-semicirculo .subtitulo{
     color: --black;
     margin-left: auto;
     writing-mode: vertical-lr;
     position: absolute;
     right: 1rem;
-    top: 10rem;
+    top: 8rem;
     font-size: 2rem;
     letter-spacing: .4rem;
 }
@@ -897,7 +897,7 @@ font-size: 2rem;
         top: 100%; right: -100%;
         background: #fff;
         width: 30rem;
-        height: calc(100vh - 9.5rem);
+        height: 25rem;
      }
 
      .header .navbar.active{
@@ -957,11 +957,11 @@ font-size: 2rem;
     .nums .num {
         flex: flex;
         text-align: center;
-        font-size: 8rem;
         font-family: helvetica-extrabold;
         padding: 3rem;
         cursor: pointer;
-       
+        font-size: 5rem;
+        letter-spacing: -.5rem;
       }
     
     
@@ -1034,58 +1034,12 @@ font-size: 2rem;
         }
 
         .father-semicirculo .semicirculo {
-            width: 50rem;
-            height: 44rem;
-            background: #fff;
-            border-top-left-radius: 45%;
-            border-bottom-left-radius: 45%;
-            margin-left: auto;
-            display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-            padding: 1rem;
-            padding-block: 5rem;
           }
         
           .father-semicirculo .semicirculo .item{
-            width: 22rem;
-            height: 3.5rem;
-            background: --black;
-            border-top-left-radius: 1.5rem;
-            border-bottom-left-radius: 1.5rem;
-            margin-left: 10rem;
-            text-align: center;
-            font-size: 2rem;
-            padding: 0.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            padding-right: 1rem;
           }
-          .father-semicirculo .semicirculo .item p {
-              color: #fff;
-              display: block;
-          }
-        
-          .father-semicirculo .semicirculo .item:hover{
-              background: var(--main-color);
-              border-bottom: .1rem solid var(--main-color);
-            padding-bottom: .5rem;
-            cursor: pointer;
-            letter-spacing: .2rem;
-          }
-          
-        
-        
-        .father-semicirculo h3{
-            color: --black;
-            margin-left: auto;
-            writing-mode: vertical-lr;
-            position: absolute;
-            right: 1rem;
-            top: 10rem;
-            font-size: 2rem;
-            letter-spacing: .4rem;
-        }
 
 
 
