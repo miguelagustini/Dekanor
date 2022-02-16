@@ -98,6 +98,7 @@ padding: .1rem 4%;
 position:relative;
 top: 0; left: 0; right: 0;
 z-index: 1000;
+overflow: hidden;
 }
 
 
@@ -106,6 +107,7 @@ z-index: 1000;
     margin-left: -5rem;
     margin-bottom: -1rem;
 }
+
 .header .navbar .seleccionado {
     border-bottom: .1rem solid currentColor; 
     text-decoration: none;
