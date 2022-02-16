@@ -59,6 +59,8 @@ html::-webkit-scrollbar-thumb {
 
 body {
     background: var(--black);
+    overflow: hidden;
+    max-width: 100%;
 }
 
 section {
@@ -98,7 +100,6 @@ padding: .1rem 4%;
 position:relative;
 top: 0; left: 0; right: 0;
 z-index: 1000;
-overflow: hidden;
 }
 
 
