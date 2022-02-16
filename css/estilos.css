@@ -391,7 +391,7 @@ z-index: 1000;
 
 
 .imagenes #imagen3 {
-            animation: slide3 10s infinite;
+            animation: slide3 15s infinite;
         }
     
     @keyframes slide3 {
@@ -422,7 +422,7 @@ z-index: 1000;
             }
 
 .imagenes #imagen4 {
-     animation: slide4 15s infinite;
+     animation: slide4 10s infinite;
  }
         
  @keyframes slide4 {
@@ -943,8 +943,26 @@ font-size: 2rem;
         height: 4rem;
         font-size: 3rem;
         text-align: center;
-
     }
+
+    .header .icons {
+        font-size: 3rem;
+        margin: 0 auto;
+        display:flexbox;     
+       }
+
+    .father-semicirculo .semicirculo {
+        flex-direction: column;
+        }
+       
+    .father-semicirculo .semicirculo .item{
+        margin-left: 15rem;
+
+        }
+
+
+
+
     .marcas{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1025,23 +1043,6 @@ font-size: 2rem;
      html {
          font-size: 50%;
      }
-
-
-     .header .icons {
-         font-size: 3rem;
-         margin: 0 auto;
-         display:flexbox;     
-        }
-
-        .father-semicirculo .semicirculo {
-            flex-direction: column;
-          }
-        
-          .father-semicirculo .semicirculo .item{
-            padding-right: 1rem;
-          }
-
-
 
 
     }
