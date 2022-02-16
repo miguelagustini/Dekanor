@@ -54,12 +54,13 @@
 
 <?php include ("includes/header.php") ?>
 
+<h1 id="titulo_editar">Actualizar noticia (Volver a ingesar la imagen)</h1>
 
 <div class="container p-4">
   <div class="row">
     <div class="col-md-4 mx-auto">
       <div class="card card-body">
-      <form action="edit.php?id=<?php echo $_GET['id']; ?>" method="POST" enctype="multipart/form-data" class="form_edit">
+      <form action="edit.php?id=<?php echo $_GET['id']; ?>" method="POST" enctype="multipart/form-data">
 
 
         <div class="form-group">
@@ -72,14 +73,14 @@
         </div>
 
         <div class="form-group">
-          <textarea name="descripcion"class="form-control" ><?php echo $descripcion; ?></textarea>
+          <textarea name="descripcion"class="form-control" id="form_description"><?php echo $descripcion; ?></textarea>
         </div> 
 
         <div class="form-group">
           <input name="imagen" type="file" class="form-control" value="" placeholder="Actualizar foto">
         </div>
 
-        <button class="btn btn-success" name="actualizar" type="submit" >  Actualizar </button>
+        <button class="btn btn-success" name="actualizar" type="submit" id="botoncito">  Actualizar </button>
       </form>
       </div>
     </div>

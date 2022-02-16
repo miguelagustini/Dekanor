@@ -40,15 +40,7 @@ html {
     scroll-behavior: smooth;
 }
 
-
-.card {
-    width: 90rem;
-    margin-left: -30rem;
-}
-
-.card .form-group {
-    padding-block: 1.3rem;
-}
+/*navbar comienza */
 
 .navbar {
     height: 12rem;
@@ -59,7 +51,11 @@ html {
     margin: 0 auto;
     font-family: 'helvetica-bold';
 }
+/*navbar termina */
 
+
+
+/*administrador.php comienza */
 .formulario {
     margin: 1.5rem;
     border: solid;
@@ -105,3 +101,35 @@ html {
     width: 5rem;
     height: auto;
 }
+
+/*administrador.php termina */
+
+
+
+
+/*Editar comienza*/
+
+.card {
+    width: 90rem;
+    margin-left: -30rem;
+}
+
+.card .form-group {
+    padding-block: 1.3rem;
+}
+
+#botoncito{
+    text-align: center;
+}
+
+#titulo_editar {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 2rem;
+}
+
+
+#form_description {
+    height: 14rem;
+}
+/*Editar termina*/

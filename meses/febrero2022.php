@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/fonts.css">
 
     <!--link css-->
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 
 
 
@@ -21,16 +21,16 @@
 <!--Header comienza-->
 <header class="header">
 
-    <a href="index.html" class="logo">
-        <img src="Logos/logo-header.png" alt="">
+    <a href="../index.html" class="logo">
+        <img src="../Logos/logo-header.png" alt="">
     </a>
 
     
     <nav class="navbar">
-        <a href="productos.html">Productos</a>
-        <a href="sobrenosotros.html">Sobre Dekanor</a>
-        <a href="noticias.php" class="seleccionado">Noticias</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="../productos.html">Productos</a>
+        <a href="../sobrenosotros.html">Sobre Dekanor</a>
+        <a href="../noticias.php" class="seleccionado">Noticias</a>
+        <a href="../contacto.html">Contacto</a>
     
     </nav>
 
@@ -42,40 +42,40 @@
 </header>
  <!--Header termina-->
 
- <?php include ("crud/db.php") ?>
+ <?php include ("../crud/db.php") ?>
 
 
- <h1 class="titulo-noticias">DEKANOR NOTICIAS</h1>
+ <h1 class="titulo-noticias">DEKANOR NOTICIAS | Febrero</h1>
 
 
  
 <div class="desplegable" id="desplegable">
-    <div class="mes"><a href="meses/marzo2022.php">Marzo 2022</a></div>
-    <div class="mes"><a href="meses/febrero2022.php">Febrero 2022</a></div>
+    <div class="mes"><a href="marzo2022.php">Marzo 2022</a></div>
+    <div class="mes"><a href="febrero2022.php" id="mes_actual">Febrero 2022</a></div>
     <div class="mes"><a href="">Enero 2022</a></div>
     <div class="mes"><a href="">Diciembre 2021</a></div>
 
 </div>
 
 
-<?php $query = "SELECT * FROM noticia ORDER BY id DESC;";
-    $result_noticias= mysqli_query($conexion, $query); ?>
+<?php $query = "SELECT * FROM noticia WHERE MONTH (fecha) = 2 AND YEAR (fecha) = 2022 ORDER BY id DESC;";
+    $result_fecha= mysqli_query($conexion, $query); ?>
 
  <section class="noticias" id="noticias">
 
- <?php while ($row = mysqli_fetch_array($result_noticias)) { ?>
+ <?php while ($row = mysqli_fetch_array($result_fecha)) { ?>
 
         <div class="row-noticias">
 
             <div class="contenido">
                 <h3><?php echo $row ['fecha'] ?><span> | <?php echo $row ['titulo'] ?></span></h3>
                 <p><?php echo $row ['texto'] ?></p>
-                <a href="ver_mas.php?id= <?php echo $row ['id']?>" class="btn-content">VER MAS</a>
+                <a href="../ver_mas.php?id= <?php echo $row ['id']?>" class="btn-content">VER MAS</a>
 
             </div>
 
             <div class="image">
-                <img src="crud/imagenes/<?php echo $row ['imagen_nombre'] ?>" alt="">
+                <img src="../crud/imagenes/<?php echo $row ['imagen_nombre'] ?>" alt="">
             </div>
 
         </div>
