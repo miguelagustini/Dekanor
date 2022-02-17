@@ -35,7 +35,7 @@
     </nav>
 
     <div class="icons">
-        <div class="fa-solid fa-phone-flip"></div>
+        <div class="fa-brands fa-whatsapp"></div>
         <div class="fas fa-bars" id="menu-btn"></div>
     </div>
 
