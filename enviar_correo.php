@@ -5,15 +5,13 @@ $telefono = $_POST ['telefono'];
 $consulta = $_POST ['consulta'];
 
 
-$from = $email;
 $para = "miguelagustini2015@gmail.com";
 $mensaje_nombre = "Nombre: " . $nombre;
-$mensaje_telefono = "Telefono: " . $telefono;
-$mensaje_consulta = "Consulta: " . $nombre;
-$header = $from;
+$mensaje_telefono = "Telefono: " . $telefono . " Consulta: " . $nombre;
+$header = "From: dekanor@gmail.com" . "\r\n" . "CCsomebodyelse@example.com";
 
 
-mail ($para, $mensaje_nombre, $mensaje_telefono, $mensaje_consulta, $header);
+mail ($para, $mensaje_nombre, $mensaje_telefono, $header);
 
-
+header('Location: contacto.html');
 ?>
