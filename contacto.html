@@ -50,27 +50,27 @@
     <div class="contactar">
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.759293017458!2d-59.65721948484215!3d-29.14228939686193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944eb0721fa50b0f%3A0xd5fecc7397922c02!2sAgrosurco%20Soluciones%20SRL!5e0!3m2!1ses!2sar!4v1644864294413!5m2!1ses!2sar" allowfullscreen="" loading="lazy"></iframe>
         
-        <form action="">
+        <form method="post"  action="enviar_correo.php">
             <h3>Contactar</h3>
 
             <div class="inputBox">
                 <span class="fas fa-user"></span>
-                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Nombre" name="nombre">
             </div>
 
             <div class="inputBox">
                 <span class="fas fa-envelope"></span>
-                <input type="email" placeholder="Email">
+                <input type="email" placeholder="Email" name="email">
             </div>
 
             <div class="inputBox">
                 <span class="fas fa-phone"></span>
-                <input type="number" placeholder="Telefono">
+                <input type="number" placeholder="Telefono" name="telefono">
             </div>
 
             <div class="inputBox">
                 <span class="fa-solid fa-comment"></span>
-                <input type="number" placeholder="Ingrese su consulta">
+                <input type="text" placeholder="Ingrese su consulta" name="consulta">
             </div>
 
             <input type="submit" value="Enviar consulta" class="btn">
