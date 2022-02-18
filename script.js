@@ -27,8 +27,9 @@ function showText () {
 
 	if(topNumber <= scrollTop / 1.3 ){
   
-    if(cont10 == 0){
-
+  cont10=0;
+  cont100=0;
+  
       let count = setInterval(() => {
           cont100 += 1;
 
@@ -50,7 +51,6 @@ function showText () {
       }, 2000 / 10);
     }
 	}
-}
 
 window.addEventListener('scroll', showText);
 

@@ -182,7 +182,7 @@ z-index: 1000;
    font-size: 3.8rem;
    color: #fff;
    padding-right:1.5rem;
-   line-height: 6rem;
+   line-height: 4rem;
    transform: scaleY(1.2);
   font-family: helvetioca-regular;
 }
@@ -539,8 +539,9 @@ z-index: 1000;
 .row .content .textosobre {
     font-size: 3.4rem;
     color: #fff;
-    line-height: 3.4rem;
+    line-height: 3.5rem;
     transform: scaleY(1.2);
+    letter-spacing: .1rem;
 }
 
 /*termina sobre nosotros*/
@@ -955,7 +956,7 @@ padding-inline: 2rem;
         padding-block: 1rem;
         padding-bottom: 4rem;
         line-height: 4.5rem;
-        text-align: center;
+        text-align: left;
     }
      
 

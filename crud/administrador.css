@@ -14,6 +14,11 @@
     src: url('../fuente/HelveticaNowText-Light.ttf') format('truetype');
 }
 
+@font-face{
+    font-family: helvetica-regular;
+    src: url('../fuente/HelveticaNowText-regular.ttf') format('truetype');
+}
+
 
 :root {
     --main-color: #d3ad7f;
@@ -23,7 +28,7 @@
 }
 
 * {
-    font-family: 'helvetica-light';
+    font-family: 'helvetica-regular';
     margin: 0; padding: 0;
     box-sizing: bordering-box;
     outline: none; border: none;
@@ -68,6 +73,7 @@ html {
 .formulario .titulo {
     text-align: center;
     font-size: 2.3rem;
+    font-family: helvetica-extrabold;
 }
 
 
@@ -90,9 +96,7 @@ html {
     font-size: helvetica-light;
     border: solid;
 }
-.table .thead th{
-    font-size: helvetica-light;
-}
+
 .blanco {
     height: 20rem;
 }
