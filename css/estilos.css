@@ -190,15 +190,19 @@ z-index: 1000;
 .father-semicirculo{
     background: var(--black);   
     position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 60rem;
+    height: 60rem;
+    background: #fff;
+    border-top-left-radius: 45%;
+    border-bottom-left-radius: 45%;
+    max-width: 100%;
+    margin-left: auto;
 }
 
 
 .father-semicirculo .semicirculo {
-    width: 55rem;
-    height: 50rem;
-    background: #fff;
-    border-top-left-radius: 45%;
-    border-bottom-left-radius: 45%;
     margin-left: auto;
     display: flex;
     flex-direction: column;
@@ -213,7 +217,6 @@ z-index: 1000;
     background: var(--black);
     border-top-left-radius: 1.8rem;
     border-bottom-left-radius: 1.8rem;
-    margin-left: 26rem;
     text-align: center;
     font-size: 2.5rem;
     padding: 0.5rem;
@@ -238,14 +241,13 @@ z-index: 1000;
 
 
 .father-semicirculo .subtitulo{
+    position: relative;
     color: --black;
-    margin-left: auto;
     writing-mode: vertical-lr;
-    position: absolute;
-    right: 1rem;
-    top: 11rem;
+    text-align: center;
     font-size: 2rem;
     letter-spacing: .4rem;
+    margin-block: 1rem;
 }
     
 
@@ -555,7 +557,7 @@ z-index: 1000;
 .footer .share a:hover{
     background-color: var(--main-color);
 }
-/*termina pagina principal*/
+/*termina pagina */
 
 
 /*empieza sobre nosotros*/
@@ -978,6 +980,7 @@ padding-inline: 2rem;
         padding-block: 1rem;
         padding-bottom: 4rem;
         line-height: 4.5rem;
+        text-align: center;
     }
      
 
@@ -1002,7 +1005,7 @@ padding-inline: 2rem;
        
     .father-semicirculo .semicirculo .item{
         height: 5rem;
-        margin-left: 25rem;
+        margin-left: 20rem;
         }
 
     .marcas{
@@ -1045,13 +1048,13 @@ padding-inline: 2rem;
         object-fit: fill;
         background-size: auto;
     }
-    .desplegable {
-    
-   }
+    .desplegable{
+        max-width: 70%;
+        justify-content: flex-start;
+    }
     .desplegable .mes{
-        padding-inline: 4rem;
-        object-fit: contain;
-        margin: 0 auto;
+        padding-inline: 2rem;
+
     }
 
     .noticias .row-noticias {
