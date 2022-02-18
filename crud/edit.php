@@ -36,15 +36,29 @@
            move_uploaded_file($imagen_tmpname, $imagen_carpeta);
       $imagen_nombre = $imagen_nombrenuevo;
 
+      $fileExt = explode('.', $imagen_name);
+      $fileActualExt = strtolower(end($fileExt));
 
-      $titulo= $_POST['titulo'];
-      $fecha= $_POST['fecha'];
-      $descripcion = $_POST['descripcion'];
-      $query = "UPDATE noticia set titulo = '$titulo', fecha = '$fecha', texto = '$descripcion', imagen_nombre = '$imagen_nombre' WHERE id=$id";
-     /* var_dump($query);
-      die(); */
-      $resultado = mysqli_query($conexion, $query);
-      header('Location: administrador.php');
+      $allowed = array ('jpg', 'jpeg', 'png');
+
+      if (in_array($fileActualExt, $allowed)){
+        $titulo= $_POST['titulo'];
+        $fecha= $_POST['fecha'];
+        $descripcion = $_POST['descripcion'];
+        $query = "UPDATE noticia set titulo = '$titulo', fecha = '$fecha', texto = '$descripcion', imagen_nombre = '$imagen_nombre' WHERE id=$id";
+     
+        $resultado = mysqli_query($conexion, $query);
+        header('Location: administrador.php');
+      }
+      else {
+        $titulo= $_POST['titulo'];
+        $fecha= $_POST['fecha'];
+        $descripcion = $_POST['descripcion'];
+        $query = "UPDATE noticia set titulo = '$titulo', fecha = '$fecha', texto = '$descripcion' WHERE id=$id";
+
+        $resultado = mysqli_query($conexion, $query);
+        header('Location: administrador.php');
+      }
 
     } 
 
@@ -54,7 +68,7 @@
 
 <?php include ("includes/header.php") ?>
 
-<h1 id="titulo_editar">Actualizar noticia (Volver a ingesar la imagen)</h1>
+<h1 id="titulo_editar">Actualizar noticia</h1>
 
 <div class="container p-4">
   <div class="row">

@@ -20,7 +20,7 @@
     $fileActualExt = strtolower(end($fileExt));
 
 
-    $allowed = array ('jpg', 'jpeg', 'png', 'pdf');
+    $allowed = array ('jpg', 'jpeg', 'png');
 
     if (in_array($fileActualExt, $allowed)){
         if($imagen_error === 0){

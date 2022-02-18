@@ -537,11 +537,12 @@ z-index: 1000;
 
 /*empieza sobre nosotros*/
 .row .content .textosobre {
+    font-family: helvetica-light;
     font-size: 3.4rem;
     color: #fff;
-    line-height: 3.5rem;
-    transform: scaleY(1.2);
+    transform: scaleY(1.1);
     letter-spacing: .1rem;
+    padding-top: 4rem;
 }
 
 /*termina sobre nosotros*/
@@ -557,6 +558,7 @@ z-index: 1000;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 7rem;
 }
 
 
@@ -606,11 +608,33 @@ z-index: 1000;
 .father-semicirculo-productos .semicirculo .link-secundario {
     font-size: 4rem;
     color: var(--black);
-    margin-left: 6rem;
+    margin-left: 9rem;
     padding-top: 1rem;
     font-family: helvetica-light;
+    position: relative;
 }
 
+.father-semicirculo-productos .semicirculo .link-secundario:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-block: auto;
+    height: 3px;
+    width: 3rem;
+    background: var(--main-color);
+    left: -4rem;
+}
+
+.father-semicirculo-productos .semicirculo .link-secundario:nth-of-type(3):after {
+    content: '';
+    position: absolute;
+    bottom: 3.3rem;
+    height: 11rem;
+    width: 3px;
+    background: var(--main-color);
+    left: -4rem;
+}
 
 .btn-productos {
     font-family: helvetica-bold;
@@ -704,6 +728,7 @@ padding-inline: 2rem;
 
 .noticias .row-noticias .image{
     flex: 1 1 50rem;
+    width: 50%;
     max-width: 50%;
     position: relative;
     display: flex;
@@ -715,13 +740,15 @@ padding-inline: 2rem;
    object-fit: cover;
    border-top-right-radius: 4rem;
    border-bottom-right-radius: 4rem;
+   width: 100%;
 }
 
 .noticias .row-noticias .contenido{
     flex: 1 1 50rem;
-    max-width: 50%;
+    width: 50%;
+    max-width: calc(50% - 6rem);
     text-align: left;
-    padding: 5rem;
+    padding: 3rem;
  
 }
 .noticias .row-noticias .contenido h3{
@@ -975,8 +1002,10 @@ padding-inline: 2rem;
         display:flexbox;     
        }
 
-    .father-semicirculo .semicirculo {
+
+    .father-semicirculo-productos .semicirculo {
         flex-direction: column;
+        padding-top: 5rem;
         }
        
     .father-semicirculo .semicirculo .item{

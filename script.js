@@ -26,32 +26,37 @@ function showText () {
 	let topNumber = section.getBoundingClientRect().top;
 
 	if(topNumber <= scrollTop / 1.3 ){
-  
-  cont10=0;
-  cont100=0;
-  
-      let count = setInterval(() => {
-          cont100 += 1;
 
-          number100.textContent = `+ ${cont100} K` ;
-        
-          if (cont100 >= 100) {
-              clearInterval(count);
-        }
-      }, 2000 / 100);
+  if (cont10 == 0 && cont100 == 0) {
+    
+    let count = setInterval(() => {
+      cont100 += 1;
+
+      number100.textContent = `+ ${cont100} K` ;
+    
+      if (cont100 >= 99) {
+          clearInterval(count);
+  }
+  
+   }, 2000 / 100);
 
        let count10 = setInterval(() => {
          cont10 += 1;
 
          number10.textContent = `+ ${cont10}` ;
     
-         if (cont10 >= 10) {
+         if (cont10 >= 9) {
               clearInterval(count10);
         }
       }, 2000 / 10);
     }
 	}
 
+  else {
+    cont10 = 0;
+    cont100 = 0;
+
+  }
+}
+
 window.addEventListener('scroll', showText);
-
-
