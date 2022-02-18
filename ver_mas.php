@@ -92,7 +92,7 @@ $row = mysqli_fetch_array ($result);
                 <img src="crud/imagenes/<?php echo $row ['imagen_nombre'] ?>" alt="">
             </div>
             <div class="content">
-                <h3><?php echo $row ['fecha'] ?><span>|<?php echo $row ['titulo'] ?></span></h3>
+                <h3><?php echo $row ['fecha'] ?><span> | <?php echo $row ['titulo'] ?></span></h3>
                 <p><?php echo $row ['texto'] ?></p>
             </div>
         </div>

@@ -28,7 +28,7 @@
 }
 
 * {
-    font-family: 'helvetica-bold';
+    font-family: 'helvetica-regular';
     margin: 0; padding: 0;
     box-sizing: bordering-box;
     outline: none; border: none;
@@ -194,8 +194,8 @@ z-index: 1000;
 
 
 .father-semicirculo .semicirculo {
-    width: 50rem;
-    height: 44rem;
+    width: 55rem;
+    height: 50rem;
     background: #fff;
     border-top-left-radius: 45%;
     border-bottom-left-radius: 45%;
@@ -208,14 +208,14 @@ z-index: 1000;
   }
 
   .father-semicirculo .semicirculo .item{
-    width: 22rem;
-    height: 3.5rem;
+    width: 20rem;
+    height: 4rem;
     background: var(--black);
-    border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
-    margin-left: 23rem;
+    border-top-left-radius: 1.8rem;
+    border-bottom-left-radius: 1.8rem;
+    margin-left: 26rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 0.5rem;
     display: flex;
     align-items: center;
@@ -224,6 +224,7 @@ z-index: 1000;
   .father-semicirculo .semicirculo .item p {
       color: #fff;
       display: block;
+      font-family: helvetica-bold;
   }
 
   .father-semicirculo .semicirculo .item:hover{
@@ -242,7 +243,7 @@ z-index: 1000;
     writing-mode: vertical-lr;
     position: absolute;
     right: 1rem;
-    top: 8rem;
+    top: 11rem;
     font-size: 2rem;
     letter-spacing: .4rem;
 }
@@ -559,10 +560,9 @@ z-index: 1000;
 
 /*empieza sobre nosotros*/
 .row .content .textosobre {
-    font-family: helvetioca-regular;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     color: #fff;
-    line-height: 3.5rem;
+    line-height: 3rem;
     transform: scaleY(1.4);
 }
 
@@ -635,6 +635,7 @@ z-index: 1000;
 
 
 .btn-productos {
+    font-family: helvetica-bold;
     padding: 1.5rem 8rem;
     font-size: 4rem;
     color: var(--black);
@@ -704,6 +705,7 @@ padding-inline: 2rem;
 
 .desplegable .mes a{
     color: var(--black);
+    font-family: helvetica-bold;
 }
 
 .header .navbar .seleccionado {
@@ -751,16 +753,20 @@ padding-inline: 2rem;
    font-family: helvetica-extrabold;
    letter-spacing: -.1rem;
    overflow: hidden;
-   
+}
+
+.noticias .row-noticias .contenido span{
+    font-family: helvetica-light;
 }
 
 .noticias .row-noticias .contenido p{
    font-size: 1.8rem;
    color: var(--black);
-   line-height: 1.8;
+   line-height: 1..5rem;
    margin-bottom: 2rem;
    overflow: hidden;
    max-height: 15rem;
+   font-family: helvetica-regular;
 }
 
 
@@ -830,15 +836,20 @@ padding-inline: 2rem;
     color: var(--black);
     display: block;
     padding-top: 1rem;
-    font-size: 2rem;
+    font-size: 2.3rem;
+    font-family: helvetica-extrabold;
+}
+
+.vermas .box-container .box .content span{
+    font-family: helvetica-light;
 }
 
 .vermas .box-container .box .content p{
     font-size: 2rem;
-    line-height: 1.8;
+    line-height: 2.4rem;
     color: black;
     padding:1rem 0;
-    font-family: helvetica-light;
+    font-family: helvetica-regular;
 }
 
 
@@ -990,11 +1001,9 @@ padding-inline: 2rem;
         }
        
     .father-semicirculo .semicirculo .item{
-        margin-left: 15rem;
+        height: 5rem;
+        margin-left: 25rem;
         }
-
-
-
 
     .marcas{
         display: grid;
