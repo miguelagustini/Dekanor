@@ -19,6 +19,11 @@
     src: url('../fuente/HelveticaNowText-Regular.ttf') format('truetype');
 }
 
+@font-face{
+    font-family: helvetica-Bolditalic;
+    src: url('../fuente/HelveticaNowText-Bolditalic.ttf') format('truetype');
+}
+
 
 :root {
     --main-color: #d3ad7f;
@@ -162,8 +167,8 @@ z-index: 1000;
 }
 
 .row .image{
-    flex: 40rem;
-    transform: translateX(-11rem);
+    flex: 70rem;
+    transform: translateX(-14rem);
 }
 
 .row .image img{
@@ -174,7 +179,7 @@ z-index: 1000;
     flex: 1 1 45rem;
     padding: 2rem;
     margin-top: 8rem;
-    margin-left: -14rem;
+    margin-left: -18rem;
 }
 
 
@@ -182,9 +187,9 @@ z-index: 1000;
    font-size: 3.8rem;
    color: #fff;
    padding-right:1.5rem;
-   line-height: 4rem;
-   transform: scaleY(1.2);
-  font-family: helvetioca-regular;
+  
+
+  font-family: helvetica-bolditalic;
 }
 
 .father-semicirculo{
@@ -192,8 +197,8 @@ z-index: 1000;
     position: relative;
     display: flex;
     justify-content: flex-end;
-    width: 60rem;
-    height: 60rem;
+    width: 70rem;
+    height: 70rem;
     background: #fff;
     border-top-left-radius: 45%;
     border-bottom-left-radius: 45%;
@@ -212,8 +217,8 @@ z-index: 1000;
   }
 
   .father-semicirculo .semicirculo .item{
-    width: 20rem;
-    height: 4rem;
+    width: 26rem;
+    height: 4.5rem;
     background: var(--black);
     border-top-left-radius: 1.8rem;
     border-bottom-left-radius: 1.8rem;
@@ -537,11 +542,11 @@ z-index: 1000;
 
 /*empieza sobre nosotros*/
 .row .content .textosobre {
-    font-family: helvetica-light;
+    font-family: helvetica-bolditalic;
     font-size: 3.4rem;
     color: #fff;
-    transform: scaleY(1.1);
-    letter-spacing: .1rem;
+   
+    
     padding-top: 4rem;
 }
 
@@ -621,8 +626,8 @@ z-index: 1000;
     bottom: 0;
     margin-block: auto;
     height: 3px;
-    width: 3rem;
-    background: var(--main-color);
+    width: 2rem;
+    background: var(--black);
     left: -4rem;
 }
 
@@ -632,7 +637,7 @@ z-index: 1000;
     bottom: 3.3rem;
     height: 11rem;
     width: 3px;
-    background: var(--main-color);
+    background: var(--black);
     left: -4rem;
 }
 
@@ -1001,6 +1006,9 @@ padding-inline: 2rem;
         margin: 0 auto;
         display:flexbox;     
        }
+.father-semicirculo {
+    height: 60rem;
+}
 
 
     .father-semicirculo-productos .semicirculo {
