@@ -170,7 +170,7 @@ z-index: 1000;
     align-items: center;
     background: var(--black);
     flex-wrap: wrap;
-    margin-top: -10rem;
+    margin-top: -12rem;
 }
 
 .row .image{
@@ -194,9 +194,7 @@ z-index: 1000;
    font-size: 3.8rem;
    color: #fff;
    padding-right:1.5rem;
-  
-
-  font-family: helvetica-bolditalic;
+  font-family: helvetica-light;
 }
 
 .father-semicirculo{
@@ -239,7 +237,8 @@ z-index: 1000;
   .father-semicirculo .semicirculo .item p {
       color: #fff;
       display: block;
-      font-family: helvetica-bold;
+      font-family: helvetica-regular;
+      font-size: 3rem;
   }
 
   .father-semicirculo .semicirculo .item:hover{
@@ -549,11 +548,9 @@ z-index: 1000;
 
 /*empieza sobre nosotros*/
 .row .content .textosobre {
-    font-family: helvetica-bolditalic;
+    font-family: helvetica-light;
     font-size: 3.4rem;
     color: #fff;
-   
-    
     padding-top: 4rem;
 }
 
@@ -630,22 +627,22 @@ z-index: 1000;
     content: '';
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: -2.5rem;
     margin-block: auto;
-    height: 3px;
-    width: 2rem;
+    height: .1rem;
+    width: 2.5rem;
     background: var(--black);
-    left: -4rem;
+    left: -3rem;
 }
 
 .father-semicirculo-productos .semicirculo .link-secundario:nth-of-type(3):after {
     content: '';
     position: absolute;
-    bottom: 3.3rem;
-    height: 11rem;
-    width: 3px;
+    bottom: 2.3rem;
+    height: 12rem;
+    width: .1rem;
     background: var(--black);
-    left: -4rem;
+    left: -3rem;
 }
 
 .btn-productos {
@@ -1000,33 +997,48 @@ padding-inline: 2rem;
      
 
 
+    .header .icons {
+        font-size: 3rem;
+        display: inline-block;
+        margin-left: 0;
+        position: relative;
+         top: 50%;
+       }
+
+       .header .icons a {
+        display: none;
+       }
+
+.father-semicirculo {
+    height: 55rem;
+}
+     
+.father-semicirculo .semicirculo .item{
+    height: 5rem;
+    width: 25rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    }
+
+    .father-semicirculo-productos .semicirculo {
+        flex-direction: flex;
+        padding-top: 5rem;
+        height: 50rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        }
+
+        
+
      .btn-productos {
         margin-inline: auto;
         margin-top: 4rem;
         height: 4rem;
         font-size: 3rem;
         width: 50%;
+        text-align: center;
     }
-
-    .header .icons {
-        font-size: 3rem;
-        margin: 0 auto;
-        display:flexbox;     
-       }
-.father-semicirculo {
-    height: 60rem;
-}
-
-
-    .father-semicirculo-productos .semicirculo {
-        flex-direction: column;
-        padding-top: 5rem;
-        }
-       
-    .father-semicirculo .semicirculo .item{
-        height: 5rem;
-        margin-left: 20rem;
-        }
+  
 
     .marcas{
         display: grid;

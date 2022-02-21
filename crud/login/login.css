@@ -1,185 +1,106 @@
-div.modal {
-    position: absolute;
-    padding: 4em;
-    background: #293040;
-    color: #888;
-    top: -100vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.3s all ease-in-out;
-    min-width: 300px;
-    font-size: 14px;
-    border-radius: 0;
-    max-height: 100vh;
-    max-width: 100vw;
-    overflow: auto;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  }
-  div.modal .content {
-    transition: 0.3s all ease-in-out;
-    max-height: 45em;
-    overflow: hidden;
-  }
-  div.modal .success-check {
-    width: 1em;
-    height: 1em;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: transparent;
-    background-size: contain;
-    transition: 0.3s all ease-in-out;
-    max-height: 0;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, 0%);
-  }
-  div.modal.success {
-    border-radius: 50em;
-    min-width: 0;
-    font-size: 4em;
-    padding: 1em;
-    text-align: center;
-  }
-  div.modal.success .content {
-    max-height: 0;
-    max-width: 0;
-  }
-  div.modal.success .success-check {
-    opacity: 1;
-    max-height: none;
-  }
-  div.modal .nav {
-    font-size: 20px;
-    font-weight: lighter;
-    margin-bottom: 4em;
-  }
-  div.modal .nav.active {
-    font-weight: 600;
-    color: #fff;
-  }
-  div.modal .nav + .nav {
-    margin-left: 2em;
-  }
-  div.modal label {
-    text-transform: uppercase;
-    font-size: 10px;
-    display: block;
-  }
-  div.modal .email {
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.3s all ease-in-out;
-    opacity: 0;
-  }
-  div.modal .email input {
-    visibility: none;
-  }
-  div.modal.register .email {
-    max-height: 6em;
-    opacity: 1;
-  }
-  div.modal.register .email input {
-    display: block;
-  }
-  div.modal input, div.modal button {
-    box-sizing: border-box;
-    width: 100%;
-    border: 0;
-    border-radius: 0.3em;
-    padding: 0.7em 1em;
-    font-family: "Open Sans", Sans-serif;
-  }
-  div.modal input:focus, div.modal button:focus {
-    outline: none;
-  }
-  div.modal input {
-    background: rgba(226, 188, 151, 0.1);
-    margin: 0.5em 0 1.5em;
-    font-weight: 600;
-    color: #E2BC97;
-    border-bottom: 2px solid transparent;
-    transition: 0.3s all ease-in-out;
-    letter-spacing: 0.05em;
-  }
-  div.modal input:focus {
-    border-bottom-color: rgba(226, 188, 151, 0.4);
-  }
-  div.modal button {
-    cursor: pointer;
-    margin: 4em 0;
-    background: #E2BC97;
-    color: #293040;
-    font-weight: 700;
-    text-transform: uppercase;
-    position: relative;
-    transition: 0.3s all ease-in-out;
-  }
-  div.modal button + button {
-    margin-top: 0.5em;
-  }
-  div.modal button + button::after {
-    display: none;
-  }
-  div.modal button + div {
-    border-top: 1px solid rgba(226, 188, 151, 0.5);
-    margin-top: 3em;
-    padding-top: 3em;
-  }
-  div.modal button::before {
-    content: "";
-    top: 0;
-    left: -4px;
-    transition: 0.3s all ease-in-out;
-    background: #E2BC97;
-    height: 100%;
-    width: 5px;
-    position: absolute;
-    transition-duration: 3s;
-    display: none;
-  }
-  div.modal button.loading .loading {
-    display: block;
-  }
-  div.modal .text-center {
-    text-align: center;
-  }
-  div.modal a {
-    color: #888;
-    text-decoration: none;
-  }
-  div.modal button span {
-    display: none;
-  }
-  div.modal.register button .register {
-    display: block;
-  }
-  div.modal.login button .login {
-    display: block;
-  }
-  div.modal button.loading span {
-    display: none !important;
-  }
-  div.modal button.loading span.loading {
-    animation: 3s throb ease-in-out;
-    display: block !important;
+body {
+  background-color: #F3EBF6;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+  background-color: #FFFFFF;
+  width: 400px;
+  height: 400px;
+  margin: 7em auto;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.sign {
+  padding-top: 40px;
+  color: #8C55AA;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.un {
+width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+form.form1 {
+  padding-top: 40px;
+}
+
+.pass {
+      width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+.un:focus, .pass:focus {
+  border: 2px solid rgba(0, 0, 0, 0.18) !important;
+  
+}
+
+.submit {
+cursor: pointer;
+  border-radius: 5em;
+  color: #fff;
+  background: linear-gradient(to right, #9C27B0, #E040FB);
+  border: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 35%;
+  font-size: 13px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.forgot {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #E1BEE7;
+  padding-top: 15px;
+}
+
+a {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #E1BEE7;
+  text-decoration: none
+}
+
+@media (max-width: 600px) {
+  .main {
+      border-radius: 0px;
   }
   
-  div.modal {
-    background: #293040;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: }
-
-    .success-check {
-        background-image: url(data:image/png;base64,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);
-      }
-      
-      @keyframes throb {
-        0%, 100% {
-          letter-spacing: 0.05em;
-        }
-        50% {
-          letter-spacing: 0.2em;
-        }
-      }
+  

@@ -34,7 +34,7 @@
     </nav>
 
     <div class="icons">
-        <div class="fa-brands fa-whatsapp"></div>
+         <a href="https://api.whatsapp.com/send?phone=+543731 40-7634" target="_blank"><div class="fa-brands fa-whatsapp"></div></a>
         <div class="fas fa-bars" id="menu-btn"></div>
     </div>
 
