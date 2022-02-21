@@ -52,8 +52,6 @@
 <div class="desplegable" id="desplegable">
     <div class="mes"><a href="marzo2022.php" id="mes_actual">Marzo 2022</a></div>
     <div class="mes"><a href="febrero2022.php">Febrero 2022</a></div>
-    <div class="mes"><a href="">Enero 2022</a></div>
-    <div class="mes"><a href="">Diciembre 2021</a></div>
 
 </div>
 

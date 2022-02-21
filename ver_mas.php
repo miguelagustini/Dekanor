@@ -52,8 +52,6 @@
         
     <div class="mes"><a href="meses/marzo2022.php">Marzo 2022</a></div>
     <div class="mes"><a href="meses/febrero2022.php">Febrero 2022</a></div>
-    <div class="mes"><a href="">Enero 2022</a></div>
-    <div class="mes"><a href="">Diciembre 2021</a></div>
 
 
 </div>
