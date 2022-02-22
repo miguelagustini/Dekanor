@@ -1,5 +1,5 @@
 body {
-  background-color: #F3EBF6;
+  background-color: #1f1e1f;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -101,6 +101,4 @@ a {
 @media (max-width: 600px) {
   .main {
       border-radius: 0px;
-  }
-  
-  
+  } }
