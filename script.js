@@ -60,3 +60,28 @@ function showText () {
 }
 
 window.addEventListener('scroll', showText);
+
+
+
+//slider
+
+const slider = document.querySelector (".contenedor-imagenes");
+let imagenes = document.querySelectorAll(".imagen-carrusel");
+let imagenesLast = imagenes[imagenes.length - 1];
+
+slider.insertAdjacentElement('afterbegin', imagenesLast);
+
+function Next() {
+	let sliderSectionFirst = document.querySelectorAll(".imagen-carrusel")[0];
+	slider.style.marginLeft = "-200%";
+	slider.style.transition = "all 6s ease";
+	setTimeout( function(){
+		slider.style.transition = "none";
+		slider.insertAdjacentElement('beforeend', sliderSectionFirst);
+		slider.style.marginLeft = "-100%";
+	}, 5000);
+}
+
+setInterval(function(){
+	Next();
+}, 7000);

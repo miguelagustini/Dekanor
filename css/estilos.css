@@ -167,6 +167,32 @@ z-index: 1000
 
 /*comienza pagina principal*/
 
+
+
+.row-principal {
+    width: 100%;
+    margin-top: 17.5rem;
+    overflow: hidden;
+    text-align: center;
+
+   
+}
+
+.row-principal .contenedor-imagenes {
+    width: 300%;
+    display: flex;
+}
+
+.row-principal .contenedor-imagenes .imagen-carrusel {
+    width: 100%;
+}
+
+.row-principal .contenedor-imagenes .imagen-carrusel img {
+    width: 100%;
+}
+
+
+
 .row {
     display: flex;
     align-items: center;
@@ -210,6 +236,7 @@ z-index: 1000
     border-bottom-left-radius: 45%;
     max-width: 100%;
     margin-left: auto;
+    margin-top: 5rem;
 }
 
 
@@ -965,7 +992,9 @@ padding-inline: 2rem;
          font-size: 2rem;
          margin-bottom: 2;
      }
-
+     .row-principal .contenedor-imagenes .imagen-carrusel img {
+         height: 25rem;
+     }
 
      .row .image img{
         height: 80rem;
@@ -1012,14 +1041,15 @@ padding-inline: 2rem;
        }
 
 .father-semicirculo {
-    height: 55rem;
+    height: 40rem;
+    width: 40rem;
 }
      
 .father-semicirculo .semicirculo .item{
-    height: 5rem;
-    width: 25rem;
-    border-top-left-radius: 2rem;
-    border-bottom-left-radius: 2rem;
+    height: 3.5rem;
+    width: 20rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
     }
 
     .father-semicirculo-productos .semicirculo {
@@ -1030,6 +1060,9 @@ padding-inline: 2rem;
         padding-bottom: 5rem;
         }
 
+    .father-semicirculo .subtitulo {
+        font-size: 1.5rem;
+    }
         
 
      .btn-productos {
