@@ -109,9 +109,9 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 padding: .1rem 4%;
-position:relative;
+position: fixed;
 top: 0; left: 0; right: 0;
-z-index: 1000;
+z-index: 1000
 }
 
 
@@ -172,7 +172,6 @@ z-index: 1000;
     align-items: center;
     background: var(--black);
     flex-wrap: wrap;
-    margin-top: -12rem;
 }
 
 .row .image{
@@ -569,13 +568,13 @@ z-index: 1000;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 7rem;
+    margin-top: 15rem;
 }
 
 
 .father-semicirculo-productos .semicirculo {
-    width: 55rem;
-    height: 60rem;
+    width: 70rem;
+    height: 70rem;
     background: #fff;
     border-top-right-radius: 45%;
     border-bottom-right-radius: 45%;
@@ -590,13 +589,13 @@ z-index: 1000;
 
 .father-semicirculo-productos .semicirculo a{
     display: flex;
-    line-height: 6rem;
+    line-height: 7rem;
     
 }
 
 .father-semicirculo-productos .semicirculo .link-primario {
     font-size: 4rem;
-    margin-left: 3rem;
+    margin-left: 5rem;
     padding-top: 1rem;
     color: var(--black);
 }
@@ -608,7 +607,7 @@ z-index: 1000;
 .father-semicirculo-productos .semicirculo .link-primario2 {
     font-size: 3.5rem;
     color: var(--black);
-    margin-left: 3rem;
+    margin-left: 5rem;
     padding-top: 1rem;
     
 }
@@ -619,7 +618,7 @@ z-index: 1000;
 .father-semicirculo-productos .semicirculo .link-secundario {
     font-size: 4rem;
     color: var(--black);
-    margin-left: 9rem;
+    margin-left: 11rem;
     padding-top: 1rem;
     font-family: helvetica-light;
     position: relative;
@@ -629,7 +628,7 @@ z-index: 1000;
     content: '';
     position: absolute;
     top: 0;
-    bottom: -2.5rem;
+    bottom: -3.5rem;
     margin-block: auto;
     height: .1rem;
     width: 2.5rem;
@@ -641,17 +640,15 @@ z-index: 1000;
     content: '';
     position: absolute;
     bottom: 2.3rem;
-    height: 12rem;
+    height: 14rem;
     width: .1rem;
     background: var(--black);
     left: -3rem;
 }
 
 .btn-productos {
-    font-family: helvetica-bold;
     padding: 1.5rem 8rem;
     font-size: 4rem;
-    color: var(--black);
     background: var(--main-color);
     cursor: pointer;
     border-radius: 2rem;
@@ -659,7 +656,10 @@ z-index: 1000;
     text-align: center;
     width: 30%;
 }
-
+.btn-productos a {
+    color: var(--black);
+    font-family: helvetica-bold;
+}
 
 .btn-productos:hover {
     letter-spacing: .2rem;
@@ -675,7 +675,7 @@ z-index: 1000;
     font-size: 4rem;
     text-align: center;
     font-weight: bold;
-    margin-top: 9rem;
+    margin-top: 20rem;
     margin-bottom: 3rem;
     font-family: helvetica-extrabold;
     padding-inline: 3rem;
@@ -886,7 +886,7 @@ padding-inline: 2rem;
     background: var(--black);
     flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 8rem;
+    margin-top: 15rem;
 }
 
 .contact .contactar .map{
