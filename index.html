@@ -44,9 +44,40 @@
 
  <div class="row-principal">
     <div class="contenedor-imagenes">
-        <div class="imagen-carrusel"><img src="imagenes/carrusel2.jpg" alt=""></div>
-        <div class="imagen-carrusel"><img src="imagenes/carrusel3.jpg" alt=""></div>
-        <div class="imagen-carrusel"><img src="imagenes/carrusel1.jpg" alt=""></div>
+        <div class="imagen-carrusel"><picture >
+            <source 
+               media="(orientation: landscape)"
+               srcset="imagenes/carrusel1.jpg">
+            <source 
+               media="(orientation: portrait)"
+               srcset="imagenes/carruselcelu1.jpg">
+               
+          <img src="imagenes/carrusel1.jpg" width="100%" height="auto">
+         </picture></div>
+
+
+        <div class="imagen-carrusel"><picture>
+            <source 
+               media="(orientation: landscape)"
+               srcset="imagenes/carrusel2.jpg">
+            <source 
+               media="(orientation: portrait)"
+               srcset="imagenes/carruselcelu2.jpg">
+               
+          <img src="imagenes/carrusel2.jpg" width="100%" height="auto">
+         </picture></div>
+
+
+        <div class="imagen-carrusel"><picture>
+            <source 
+               media="(orientation: landscape)"
+               srcset="imagenes/carrusel3.jpg">
+            <source 
+               media="(orientation: portrait)"
+               srcset="imagenes/carruselcelu3.jpg">
+               
+          <img src="imagenes/carrusel3.jpg" width="100%" height="auto">
+         </picture> </div>
     </div>
 </div>
 

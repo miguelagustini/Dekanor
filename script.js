@@ -74,14 +74,14 @@ slider.insertAdjacentElement('afterbegin', imagenesLast);
 function Next() {
 	let sliderSectionFirst = document.querySelectorAll(".imagen-carrusel")[0];
 	slider.style.marginLeft = "-200%";
-	slider.style.transition = "all 1s";
+	slider.style.transition = "all 6s ease";
 	setTimeout( function(){
 		slider.style.transition = "none";
 		slider.insertAdjacentElement('beforeend', sliderSectionFirst);
 		slider.style.marginLeft = "-100%";
-	}, 6000);
+	}, 5000);
 }
 
 setInterval(function(){
 	Next();
-}, 6000);
+}, 5000);
