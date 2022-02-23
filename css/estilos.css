@@ -171,7 +171,7 @@ z-index: 1000
 
 .row-principal {
     width: 100%;
-    margin-top: 17.5rem;
+    margin-top: 18rem;
     overflow: hidden;
     text-align: center;
 
@@ -337,6 +337,7 @@ z-index: 1000
       font-size: 2rem;
       text-align: center;
       font-family: helvetica-light;
+      padding-inline: 2rem;
   }
 
 .imagenes {
@@ -991,9 +992,6 @@ padding-inline: 2rem;
          padding: .5rem;
          font-size: 2rem;
          margin-bottom: 2;
-     }
-     .row-principal .contenedor-imagenes .imagen-carrusel img {
-         height: 25rem;
      }
 
      .row .image img{
